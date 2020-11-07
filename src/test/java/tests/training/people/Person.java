@@ -1,4 +1,4 @@
-package people;
+package tests.training.people;
 
 public class Person {
 private int age;

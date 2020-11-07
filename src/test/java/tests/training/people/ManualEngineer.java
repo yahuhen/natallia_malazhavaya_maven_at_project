@@ -1,4 +1,4 @@
-package people;
+package tests.training.people;
 
 public class ManualEngineer extends Engineer {
     public ManualEngineer(int age, int experience) {

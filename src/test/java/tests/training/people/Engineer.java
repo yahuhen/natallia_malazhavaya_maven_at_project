@@ -1,4 +1,4 @@
-package people;
+package tests.training.people;
 
 public abstract class Engineer extends Person{
     int skill;

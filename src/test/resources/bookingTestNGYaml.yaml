@@ -1,0 +1,9 @@
+name: YAML Test suite
+parallel: classes
+threadCount: 2
+tests:
+  - name: Booking tests
+    classes:
+      - tests.booking.BookingFavorites
+      - tests.booking.BookingHeaderElements
+      - tests.booking.BookingNewUser
