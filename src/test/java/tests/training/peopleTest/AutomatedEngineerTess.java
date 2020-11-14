@@ -2,7 +2,7 @@ package tests.training.peopleTest;
 
 import org.junit.Test;
 
-import tests.training.people.AutomatedEngineer;
+import people.AutomatedEngineer;
 
 import static org.junit.Assert.assertEquals;
 

@@ -1,7 +1,7 @@
 package tests.training.peopleTest;
 
 import org.junit.Test;
-import tests.training.people.ManualEngineer;
+import people.ManualEngineer;
 
 import static org.junit.Assert.assertEquals;
 

@@ -7,9 +7,11 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.net.MalformedURLException;
+
 public class BookingScrollMoskow {
     @Test
-    public void bookingScrollMoskow() {
+    public void bookingScrollMoskow() throws MalformedURLException {
 //        WebDriver driver = Driver.getWebDriver();
         WebDriver driver = ThreadLocaleDriver.getWebDriver();
         driver.navigate().to("https://www.booking.com/");

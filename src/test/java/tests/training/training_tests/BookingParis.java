@@ -8,11 +8,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.net.MalformedURLException;
 import java.util.concurrent.TimeUnit;
 
 public class BookingParis {
     @Test
-    public void bookingParis() throws InterruptedException, TestException {
+    public void bookingParis() throws InterruptedException, TestException, MalformedURLException {
 //        WebDriver driver = Driver.getWebDriver();
         WebDriver driver = ThreadLocaleDriver.getWebDriver();
         driver.navigate().to("https://www.booking.com/");

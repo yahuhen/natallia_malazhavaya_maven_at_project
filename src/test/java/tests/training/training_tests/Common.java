@@ -10,20 +10,22 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.net.MalformedURLException;
+
 public class Common {
     @Before
-    public void initDriver() {
+    public void initDriver() throws MalformedURLException {
         ThreadLocaleDriver.getWebDriver().get("https://www.booking.com/");
     }
 
     @After
-    public void closeDriver() {
+    public void closeDriver() throws MalformedURLException {
         ThreadLocaleDriver.getWebDriver().close();
         ThreadLocaleDriver.setWebDriver(null);
     }
 
     @Test
-    public void bookingMouse() throws InterruptedException {
+    public void bookingMouse() throws InterruptedException, MalformedURLException {
         Thread.sleep(2000);
         WebElement element = ThreadLocaleDriver.getWebDriver().findElement(By.xpath("//*[@*[contains(., 'Выберите валюту')]]/.."));
         Actions actions = new Actions(ThreadLocaleDriver.getWebDriver());
@@ -34,7 +36,7 @@ public class Common {
         Assert.assertEquals("Выберите валюту", byn);
     }
         @Test
-        public void bookingScrollMoskow() {
+        public void bookingScrollMoskow() throws MalformedURLException {
             ThreadLocaleDriver.getWebDriver().findElement(By.xpath("//input[@id='ss']")).click();
             ThreadLocaleDriver.getWebDriver().findElement(By.xpath("//input[@id='ss']")).sendKeys("Москва");
             Actions make = new Actions(ThreadLocaleDriver.getWebDriver());

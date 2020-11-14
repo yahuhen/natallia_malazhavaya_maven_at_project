@@ -4,6 +4,6 @@ threadCount: 2
 tests:
   - name: Booking tests
     classes:
-      - tests.booking.BookingFavorites
+      - tests.booking.BookingAddToFavorites
       - tests.booking.BookingHeaderElements
       - tests.booking.BookingNewUser

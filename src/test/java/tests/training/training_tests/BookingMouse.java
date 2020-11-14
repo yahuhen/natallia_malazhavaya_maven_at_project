@@ -9,9 +9,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
+import java.net.MalformedURLException;
+
 public class BookingMouse {
     @Test
-    public void bookingMouse() throws InterruptedException {
+    public void bookingMouse() throws InterruptedException, MalformedURLException {
 ////        WebDriver driver = Driver.getWebDriver();
         WebDriver driver = ThreadLocaleDriver.getWebDriver();
         driver.navigate().to("https://www.booking.com/");

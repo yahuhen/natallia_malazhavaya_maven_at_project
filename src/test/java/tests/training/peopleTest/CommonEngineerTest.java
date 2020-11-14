@@ -3,9 +3,9 @@ package tests.training.peopleTest;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import tests.training.people.AutomatedEngineer;
-import tests.training.people.Engineer;
-import tests.training.people.ManualEngineer;
+import people.AutomatedEngineer;
+import people.Engineer;
+import people.ManualEngineer;
 
 import java.util.Arrays;
 import java.util.Collection;

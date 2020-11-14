@@ -4,7 +4,7 @@
 <suite name = "XML Test suite" verbose="1">
     <test name = "Booking tests">
         <classes>
-	     <class name = "tests.booking.BookingFavorites"/>
+	     <class name = "tests.booking.BookingAddToFavorites"/>
 	     <class name = "tests.booking.BookingHeaderElements"/>
 	     <class name = "tests.booking.BookingNewUser"/>
 	</classes>

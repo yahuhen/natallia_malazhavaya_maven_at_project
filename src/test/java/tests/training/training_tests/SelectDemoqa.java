@@ -7,9 +7,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
+import java.net.MalformedURLException;
+
 public class SelectDemoqa {
     @Test
-    public void select() throws InterruptedException {
+    public void select() throws InterruptedException, MalformedURLException {
 //        WebDriver driver = Driver.getWebDriver();
         WebDriver driver = ThreadLocaleDriver.getWebDriver();
         driver.navigate().to("https://demoqa.com/select-menu");

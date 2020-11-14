@@ -1,7 +1,7 @@
 package tests.training.peopleTest;
 
 import org.junit.Test;
-import tests.training.people.Person;
+import people.Person;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;

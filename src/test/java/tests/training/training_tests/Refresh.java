@@ -4,9 +4,11 @@ import driver.ThreadLocaleDriver;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 
+import java.net.MalformedURLException;
+
 public class Refresh {
     @Test
-    public void refresh() {
+    public void refresh() throws MalformedURLException {
 //        WebDriver driver = Driver.getWebDriver();
         WebDriver driver = ThreadLocaleDriver.getWebDriver();
 //        driver.navigate().to("https://www.tut.by/");

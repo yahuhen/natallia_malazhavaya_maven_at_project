@@ -9,9 +9,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
+import java.net.MalformedURLException;
+
 public class W3schools {
     @Test
-    public void w3school() throws InterruptedException {
+    public void w3school() throws InterruptedException, MalformedURLException {
 //        WebDriver driver = Driver.getWebDriver();
         WebDriver driver = ThreadLocaleDriver.getWebDriver();
         driver.navigate().to("https://www.w3schools.com/java/");
